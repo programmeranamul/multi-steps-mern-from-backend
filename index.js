@@ -17,7 +17,7 @@ mongoose
     }
   )
   .then(() =>
-    app.listen(8001, () => {
+    app.listen( 9090 , () => {
       console.log("App is running");
     })
   )
@@ -30,7 +30,6 @@ app.post("/addData", (req, res) => {
       res.status(400).json(error);
     }
     if (data) {
-      console.log(req.body);
       res.status(201).json(data);
     }
   });
